@@ -20,8 +20,7 @@ margin-top: 0;
 /* ----------------paint----- */ */
 
 /* /* #settings { display: block; text-align:center} */
-
-
+/* 
 #paint {
 
      /* display: block; */
@@ -35,15 +34,15 @@ margin-top: 0;
 
 
 
-     #sketch{
+/*      #sketch{
          width: 100%;
-     }
+     } */ */
 
      /* -------------------------navbar--------- */
 
      .navbar ul li a{
          color:black;
-         font-weight:800;
+         font-weight:600;
          font-size: large;
          opacity: 100;
          
