@@ -1,96 +1,96 @@
-var canvas = document.getElementById('paint');
-var ctx = canvas.getContext('2d');
+// var canvas = document.getElementById('paint');
+// var ctx = canvas.getContext('2d');
  
-var sketch = document.getElementById('sketch');
-var sketch_style = getComputedStyle(sketch);
-canvas.width = 1000;
-canvas.height = 1000;
+// var sketch = document.getElementById('sketch');
+// var sketch_style = getComputedStyle(sketch);
+// canvas.width = 1000;
+// canvas.height = 1000;
 
-var mouse = {x: 0, y: 0};
+// var mouse = {x: 0, y: 0};
  
-/* Mouse Capturing Work */
-canvas.addEventListener('mousemove', function(e) {
-  mouse.x = e.pageX - this.offsetLeft;
-  mouse.y = e.pageY - this.offsetTop;
-}, false);
+// /* Mouse Capturing Work */
+// canvas.addEventListener('mousemove', function(e) {
+//   mouse.x = e.pageX - this.offsetLeft;
+//   mouse.y = e.pageY - this.offsetTop;
+// }, false);
 
-/* Drawing on Paint App */
-ctx.lineJoin = 'round';
-ctx.lineCap = 'round';
+// /* Drawing on Paint App */
+// ctx.lineJoin = 'round';
+// ctx.lineCap = 'round';
 
-ctx.strokeStyle = "#87ceeb";
-function getColor(colour){ctx.strokeStyle = colour;}
+// ctx.strokeStyle = "#87ceeb";
+// function getColor(colour){ctx.strokeStyle = colour;}
 
-function getSize(size){ctx.lineWidth = size;}
+// function getSize(size){ctx.lineWidth = size;}
 
-ctx.strokeStyle = '#87ceeb';
-ctx.lineWidth = 5;
+// ctx.strokeStyle = '#87ceeb';
+// ctx.lineWidth = 5;
 
 
-//ctx.strokeStyle = 
-//ctx.strokeStyle = document.settings.colour[1].value;
+// //ctx.strokeStyle = 
+// //ctx.strokeStyle = document.settings.colour[1].value;
  
-canvas.addEventListener('mousedown', function(e) {
-    ctx.beginPath();
-    ctx.moveTo(mouse.x, mouse.y);
+// canvas.addEventListener('mousedown', function(e) {
+//     ctx.beginPath();
+//     ctx.moveTo(mouse.x, mouse.y);
  
-    canvas.addEventListener('mousemove', onPaint, false);
-}, false);
+//     canvas.addEventListener('mousemove', onPaint, false);
+// }, false);
  
-canvas.addEventListener('mouseup', function() {
-    canvas.removeEventListener('mousemove', onPaint, false);
-}, false);
+// canvas.addEventListener('mouseup', function() {
+//     canvas.removeEventListener('mousemove', onPaint, false);
+// }, false);
  
-var onPaint = function() {
-    ctx.lineTo(mouse.x, mouse.y);
-    ctx.stroke();
-};var canvas = document.getElementById('paint');
-var ctx = canvas.getContext('2d');
+// var onPaint = function() {
+//     ctx.lineTo(mouse.x, mouse.y);
+//     ctx.stroke();
+// };var canvas = document.getElementById('paint');
+// var ctx = canvas.getContext('2d');
  
-var sketch = document.getElementById('sketch');
-var sketch_style = getComputedStyle(sketch);
-canvas.width = 500;
-canvas.height = 250;
+// var sketch = document.getElementById('sketch');
+// var sketch_style = getComputedStyle(sketch);
+// canvas.width = 500;
+// canvas.height = 250;
 
-var mouse = {x: 0, y: 0};
+// var mouse = {x: 0, y: 0};
  
-/* Mouse Capturing Work */
-canvas.addEventListener('mousemove', function(e) {
-  mouse.x = e.pageX - this.offsetLeft;
-  mouse.y = e.pageY - this.offsetTop;
-}, false);
+// /* Mouse Capturing Work */
+// canvas.addEventListener('mousemove', function(e) {
+//   mouse.x = e.pageX - this.offsetLeft;
+//   mouse.y = e.pageY - this.offsetTop;
+// }, false);
 
-/* Drawing on Paint App */
-ctx.lineJoin = 'round';
-ctx.lineCap = 'round';
+// /* Drawing on Paint App */
+// ctx.lineJoin = 'round';
+// ctx.lineCap = 'round';
 
-ctx.strokeStyle = "#87ceeb";
-function getColor(colour){ctx.strokeStyle = colour;}
+// ctx.strokeStyle = "#87ceeb";
+// function getColor(colour){ctx.strokeStyle = colour;}
 
-function getSize(size){ctx.lineWidth = size;}
+// function getSize(size){ctx.lineWidth = size;}
 
-ctx.strokeStyle = '#87ceeb';
-ctx.lineWidth = 5;
+// ctx.strokeStyle = '#87ceeb';
+// ctx.lineWidth = 5;
 
 
-//ctx.strokeStyle = 
-//ctx.strokeStyle = document.settings.colour[1].value;
+// //ctx.strokeStyle = 
+// //ctx.strokeStyle = document.settings.colour[1].value;
  
-canvas.addEventListener('mousedown', function(e) {
-    ctx.beginPath();
-    ctx.moveTo(mouse.x, mouse.y);
+// canvas.addEventListener('mousedown', function(e) {
+//     ctx.beginPath();
+//     ctx.moveTo(mouse.x, mouse.y);
  
-    canvas.addEventListener('mousemove', onPaint, false);
-}, false);
+//     canvas.addEventListener('mousemove', onPaint, false);
+// }, false);
  
-canvas.addEventListener('mouseup', function() {
-    canvas.removeEventListener('mousemove', onPaint, false);
-}, false);
+// canvas.addEventListener('mouseup', function() {
+//     canvas.removeEventListener('mousemove', onPaint, false);
+// }, false);
  
-var onPaint = function() {
-    ctx.lineTo(mouse.x, mouse.y);
-    ctx.stroke();
-};
+// var onPaint = function() {
+//     ctx.lineTo(mouse.x, mouse.y);
+//     ctx.stroke();
+// };
 
 
 // typing
