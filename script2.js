@@ -39,7 +39,7 @@ window.addEventListener("load",() =>{
 
     //listeners
     mycanvas.addEventListener('mousemove', drawline)
-    mycanvas.addEventListener('touchstart', drawline)
+    mycanvas.addEventListener('touchmove', drawline)
 
     mycanvas.addEventListener('click',changeColor)
 
