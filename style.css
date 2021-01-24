@@ -18,8 +18,8 @@ margin-top: 0;
          font-weight:700;
          font-size: large;
          opacity: 100;
-
-
+         
+         
      }
 
 
@@ -47,10 +47,10 @@ margin-top: 0;
          margin-top: 1.25rem;
      }
 
-
+    
 
      /* content typing */
-
+   
       .container p {
           font-family: inherit;
          font-size: 1.5rem;
@@ -105,10 +105,17 @@ margin-top: 0;
         max-width: 500px;
     }
 
+    .services-con{
+      max-width: 100% !important;
+      margin-left: 0 !important;
+      margin-top: 0 !important;
+      height: 100% !important;
+    }
+
     .absout{
       position: relative;
     }
 
     .absin{
       position: absolute;
-    } 
+    }
