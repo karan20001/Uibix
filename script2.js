@@ -41,5 +41,6 @@ window.addEventListener("load",() =>{
     mycanvas.addEventListener('mousemove', drawline)
 
     mycanvas.addEventListener('click',changeColor)
+    mycanvas.addEventListener('touchstart',changeColor)
 
 }) 
